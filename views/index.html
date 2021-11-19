@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="description" content="Favorite games">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="author" content="Valmir de Barros Pedro">
@@ -12,6 +10,9 @@
 
     <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="../styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
 
     <script src="../Js/functions.js"></script>
@@ -19,8 +20,8 @@
 </head>
 
 <body>
-      <header>
-            <img src="../img/index/logo.webp" alt="skull logo" width="100" height="70" class="logo"> 
+      <header id="headerName">
+            <img src="../img/index/logo.png" alt="skull logo" class="logo"> 
             <h2>
                 My favorite games
             </h2>
@@ -28,27 +29,36 @@
         
         <div class="content">
             <div class="category">
-                <div class="category-action">
-                    <p> Action</p>
-                </div>
-
-                <div class="category-arcade">
-                    <p> Arcade</p>
-                </div>
-
-                <div class="category-fps">
-                    <p> FPS </p>
-                </div>
-
-                <div class="category-freeWorld">
-                    <p> Free World</p>
-                </div>
-
-                <div class="category-race">
-                    <p> Race hahah </p>
+                <div onclick="goAction()" class="category-action">
+                    <div class="button">
+                        <p> Action</p>
+                    </div>
                 </div>
 
 
+                <div onclick="goArcade()" class="category-arcade">
+                    <div class="button">
+                        <p> Arcade</p>
+                    </div>
+                </div>
+
+                <div onclick="goFPS()" class="category-fps">
+                    <div class="button" >
+                        <p>FPS</p>
+                    </div>
+                </div>
+
+                <div onclick="goFreeWorld()" class="category-freeWorld">
+                    <div class="button">
+                        <p>Free World</p>
+                    </div>
+                </div>
+
+                <div onclick="goRace()" class="category-race">
+                    <div class="button">
+                        <p> Race </p>
+                    </div>
+                </div>
             </div>
         
         <footer> <p>Developed by Valmir de Barros -
@@ -60,5 +70,4 @@
         </footer>
     </div>
 </body>
-
 </html>
